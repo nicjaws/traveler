@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable,
          :confirmable, :omniauthable
 
-         validates :fullname, presence: true, length: {maximum: 50
+         validates :fullname, presence: true, length: {maximum: 50}
           
           def self.from_omniauth(auth)
             user = User.where(email: auth.info.email).first
