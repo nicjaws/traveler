@@ -7,9 +7,9 @@ Rails.application.routes.draw do
                sign_in: 'login',
                sign_out: 'logout',
                edit: 'profile',
-               sign_up: 'registration'
+               sign_up: 'registration',
              },
-             constrollers: {omniauth_callbacks: 'omniauth_callbacks'}
+             :constrollers => {:omniauth_callbacks => "users/omniauth_callbacks"}
              
 
   
