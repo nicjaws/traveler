@@ -9,7 +9,7 @@ Rails.application.routes.draw do
                edit: 'profile',
                sign_up: 'registration',
              },
-             :controllers => { :omniauth_callbacks => 'users/omniauth_callbacks'}
+             :controllers => { :omniauth_callbacks => 'users/omniauth_callbacks', registrations: 'registrations'}
              
 
   resources :users, only: [:show]
