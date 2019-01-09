@@ -16,6 +16,8 @@ class User < ApplicationRecord
   def self.from_omniauth(auth)
     user = User.where(email: auth.info.email).first
 
+    has_many :rooms
+    
     if user
       return user
     else
