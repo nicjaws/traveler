@@ -1,4 +1,4 @@
-class RoomController < ApplicationController
+class RoomsController < ApplicationController
   before_action :set_room, except: [:index, :new, :create]
   before_action :authenticate_user!, except: [:show]
 
@@ -44,7 +44,7 @@ class RoomController < ApplicationController
 
   def update
     if @room.update(room_params)
-      flash[notice:] "Saved..."
+      flash[:notice] = "Saved..."
     else
       flash[:notice] = "Something went wrong..."
     end

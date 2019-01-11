@@ -3,8 +3,8 @@
 one:
   hotel_type: MyString
   room_type: MyString
-  bed_room: MyString
-  bed_number: 1
+  accommodate: 1
+  bed_room: 1
   bath_room: 1
   listing_name: MyString
   summary: MyText
@@ -21,8 +21,8 @@ one:
 two:
   hotel_type: MyString
   room_type: MyString
-  bed_room: MyString
-  bed_number: 1
+  accommodate: 1
+  bed_room: 1
   bath_room: 1
   listing_name: MyString
   summary: MyText

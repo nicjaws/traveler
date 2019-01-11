@@ -10,13 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181221085729) do
+ActiveRecord::Schema.define(version: 20190110112637) do
 
   create_table "rooms", force: :cascade do |t|
     t.string   "hotel_type"
     t.string   "room_type"
-    t.string   "bed_room"
-    t.integer  "bed_number"
+    t.integer  "accommodate"
+    t.integer  "bed_room"
     t.integer  "bath_room"
     t.string   "listing_name"
     t.text     "summary"

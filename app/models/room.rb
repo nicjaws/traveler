@@ -1,11 +1,10 @@
 class Room < ApplicationRecord
   belongs_to :user
 
-  validate: :hotel_type, presence: true
-  validate: :room_type, presence: true
-  validate: :bed_room, presence: true
-  validate: :bed_number, presence: true
-  validate: :bath_room, presence: true
+  validates :hotel_type, presence: true
+  validates :room_type, presence: true
+  validates :accommodate, presence: true
+  validates :bed_room, presence: true
+  validates :bath_room, presence: true
 
 end
-
